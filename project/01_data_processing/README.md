@@ -1,6 +1,5 @@
 # 01_data_processing: NYC TLC 出行数据问答系统阶段代码
 
-本目录是可单独提交到 GitHub 的阶段版本，包含代码、`main.py` 一键运行入口、`data/`、`outputs/`、`requirements.txt`。
 
 ## PyCharm 运行
 
