@@ -1,0 +1,19 @@
+dataset:
+  taxi_type: yellow
+  year: 2026
+  month: 1
+  url: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-01.parquet
+  raw_path: data/raw/yellow_tripdata_2026-01.parquet
+  clean_path: data/processed/yellow_tripdata_2026-01_clean.parquet
+  quality_report_path: reports/data_quality_report_yellow_2026_01.json
+
+cleaning:
+  max_trip_hours: 24
+  max_passenger_count: 8
+  max_trip_distance_miles: 200
+  max_total_amount: 1000
+  min_speed_mph: 0
+  max_speed_mph: 100
+
+features:
+  peak_hours: [7, 8, 9, 16, 17, 18, 19]
