@@ -2,10 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f14c8e1a-039a-4470-b89b-3b6b48c1b192" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/project/report.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/data/processed/yellow_tripdata_clean.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/01_time_demand_avg_hourly_weekday_weekend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/02a_top_pickup_zones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/02b_top_dropoff_zones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/02c_top_pickup_zones_hour_heatmap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/03a_distance_vs_fare_scatter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/03b_avg_fare_by_hour.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/03c_avg_fare_by_passenger_count.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/04_top_od_zone_pairs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/analysis/analysis_summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/modeling/05_nn_loss_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/modeling/06_model_comparison_mae_rmse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/modeling/demand_prediction_metrics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/modeling/random_forest_feature_importance.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/modeling/region_hour_demand_dataset.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/outputs/modeling/test_predictions_sample.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/reports/data_quality_report.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/期末.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/期末.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/02_analysis_visualization/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/data/processed/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/data/raw/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/project/data/processed/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/docs/01_data_processing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/outputs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/project/data/raw/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/reports/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/project/outputs/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/src/tlc_qa/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/tlc_qa/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/01_data_processing/src/tlc_qa/data_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/tlc_qa/data_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/config/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/data/processed/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/project/reports/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/data/raw/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/docs/01_data_processing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/docs/02_analysis_visualization.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/outputs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/reports/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/src/tlc_qa/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/src/tlc_qa/analysis_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/tlc_qa/analysis_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/02_analysis_visualization/src/tlc_qa/data_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/config/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/data/processed/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/data/raw/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/docs/01_data_processing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/docs/02_analysis_visualization.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/docs/03_demand_prediction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/outputs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/reports/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/src/tlc_qa/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/src/tlc_qa/analysis_visualization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/src/tlc_qa/data_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/03_demand_prediction/src/tlc_qa/demand_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/tlc_qa/demand_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/config/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/data/processed/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/data/raw/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/docs/01_data_processing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/docs/02_analysis_visualization.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/docs/03_demand_prediction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/docs/04_qa_interface.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/outputs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/reports/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/src/tlc_qa/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/src/tlc_qa/analysis_visualization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/src/tlc_qa/data_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/src/tlc_qa/demand_prediction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/04_qa_interface/src/tlc_qa/qa_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/tlc_qa/qa_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/report.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/人机协作报告.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +92,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -30,19 +107,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "正在变基 main",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\期末\project" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="期末" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="期末" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,7 +161,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project/01_data_processing/main.py" />
+      <option name="SCRIPT_NAME" value="D:\期末\project\main1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -68,6 +173,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.main1" />
       </list>
     </recent_temporary>
   </component>

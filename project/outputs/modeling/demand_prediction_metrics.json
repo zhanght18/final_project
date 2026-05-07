@@ -1,0 +1,40 @@
+{
+  "config": {
+    "input_path": "data/processed/yellow_tripdata_clean.parquet",
+    "output_dir": "outputs/modeling",
+    "pickup_time_col": "pickup_datetime",
+    "region_col": "PULocationID",
+    "test_size": 0.2,
+    "epochs": 10,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "random_state": 42,
+    "max_rows": null,
+    "min_region_hour_count": 1
+  },
+  "target_definition": "trip_count grouped by pickup Taxi Zone ID and pickup hour",
+  "train_rows": 3396,
+  "test_rows": 849,
+  "feature_count_after_encoding": 270,
+  "metrics": {
+    "neural_network": {
+      "MAE": 15.09316635131836,
+      "RMSE": 31.847264089407567
+    },
+    "random_forest": {
+      "MAE": 6.475723032631037,
+      "RMSE": 15.42208176561569
+    }
+  },
+  "outputs": {
+    "region_hour_dataset": "outputs\\modeling\\region_hour_demand_dataset.parquet",
+    "loss_curve": "outputs\\modeling\\05_nn_loss_curve.png",
+    "model_comparison": "outputs\\modeling\\06_model_comparison_mae_rmse.png",
+    "prediction_sample": "outputs\\modeling\\test_predictions_sample.csv"
+  },
+  "method_notes": {
+    "split": "Chronological 8:2 split, not random row split, to better simulate forecasting.",
+    "neural_network": "MLP can model nonlinear interactions but requires tuning and sufficient data.",
+    "random_forest": "Strong tabular baseline; less tuning, often robust on small/medium structured data, but less extrapolative over unseen time patterns."
+  }
+}

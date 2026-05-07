@@ -1,0 +1,111 @@
+{
+  "row_count": 100000,
+  "column_count": 20,
+  "missing": {
+    "tpep_pickup_datetime": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "tpep_dropoff_datetime": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "passenger_count": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "trip_distance": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "PULocationID": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "DOLocationID": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "fare_amount": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "total_amount": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "payment_type": {
+      "missing_count": 0,
+      "missing_rate": 0.0
+    }
+  },
+  "anomalies": {
+    "invalid_datetime": 0,
+    "dropoff_not_after_pickup": 1649,
+    "trip_distance_le_zero": 1805,
+    "passenger_count_le_zero": 541,
+    "fare_amount_negative": 1950,
+    "total_amount_negative": 1981,
+    "unknown_payment_type": 0
+  },
+  "numeric_summary": {
+    "trip_distance": {
+      "count": 100000.0,
+      "mean": 4.2035848,
+      "std": 115.86946752821581,
+      "min": 0.0,
+      "1%": 0.0,
+      "50%": 1.8,
+      "99%": 20.71,
+      "max": 36610.27
+    },
+    "passenger_count": {
+      "count": 100000.0,
+      "mean": 1.46175,
+      "std": 0.8721264492867048,
+      "min": 0.0,
+      "1%": 1.0,
+      "50%": 1.0,
+      "99%": 4.0,
+      "max": 6.0
+    },
+    "fare_amount": {
+      "count": 100000.0,
+      "mean": 20.0847551,
+      "std": 22.409549205215615,
+      "min": -629.5,
+      "1%": -12.806999999999995,
+      "50%": 12.8,
+      "99%": 90.0,
+      "max": 850.0
+    },
+    "total_amount": {
+      "count": 100000.0,
+      "mean": 29.1542077,
+      "std": 27.107721817188583,
+      "min": -636.75,
+      "1%": -18.6515,
+      "50%": 20.95,
+      "99%": 113.56,
+      "max": 850.0
+    }
+  },
+  "iqr_outlier_bounds": {
+    "trip_distance": {
+      "lower": -3.5149999999999997,
+      "upper": 8.524999999999999
+    },
+    "passenger_count": {
+      "lower": -0.5,
+      "upper": 3.5
+    },
+    "fare_amount": {
+      "lower": -13.750000000000002,
+      "upper": 45.85
+    },
+    "total_amount": {
+      "lower": -10.2,
+      "upper": 58.199999999999996
+    }
+  }
+}

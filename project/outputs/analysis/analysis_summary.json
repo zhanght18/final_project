@@ -1,0 +1,487 @@
+{
+  "input_path": "data/processed/yellow_tripdata_clean.parquet",
+  "row_count": 93663,
+  "analysis_1_time_demand": {
+    "chart": "outputs\\analysis\\01_time_demand_avg_hourly_weekday_weekend.png",
+    "table_preview": [
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 0,
+        "orders": 2939.5
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 1,
+        "orders": 2385.5
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 2,
+        "orders": 2085.0
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 3,
+        "orders": 1354.5
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 4,
+        "orders": 852.5
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 5,
+        "orders": 571.5
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 6,
+        "orders": 731.0
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 7,
+        "orders": 1030.5
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 8,
+        "orders": 1329.0
+      },
+      {
+        "day_type": "Weekday",
+        "pickup_hour": 9,
+        "orders": 1914.5
+      }
+    ],
+    "top_average_hour_segment": {
+      "day_type": "Weekday",
+      "pickup_hour": 13,
+      "orders": 4200.0
+    }
+  },
+  "analysis_2_zone_hotspots": {
+    "charts": [
+      "outputs\\analysis\\02a_top_pickup_zones.png",
+      "outputs\\analysis\\02b_top_dropoff_zones.png",
+      "outputs\\analysis\\02c_top_pickup_zones_hour_heatmap.png"
+    ],
+    "top_pickups": [
+      {
+        "PULocationID": 132,
+        "pickup_count": 7013
+      },
+      {
+        "PULocationID": 161,
+        "pickup_count": 3979
+      },
+      {
+        "PULocationID": 186,
+        "pickup_count": 3932
+      },
+      {
+        "PULocationID": 237,
+        "pickup_count": 3590
+      },
+      {
+        "PULocationID": 230,
+        "pickup_count": 3510
+      },
+      {
+        "PULocationID": 138,
+        "pickup_count": 3216
+      },
+      {
+        "PULocationID": 236,
+        "pickup_count": 3132
+      },
+      {
+        "PULocationID": 142,
+        "pickup_count": 3105
+      },
+      {
+        "PULocationID": 239,
+        "pickup_count": 2920
+      },
+      {
+        "PULocationID": 162,
+        "pickup_count": 2743
+      }
+    ],
+    "top_dropoffs": [
+      {
+        "DOLocationID": 161,
+        "dropoff_count": 3579
+      },
+      {
+        "DOLocationID": 236,
+        "dropoff_count": 3405
+      },
+      {
+        "DOLocationID": 230,
+        "dropoff_count": 3381
+      },
+      {
+        "DOLocationID": 237,
+        "dropoff_count": 3277
+      },
+      {
+        "DOLocationID": 239,
+        "dropoff_count": 2728
+      },
+      {
+        "DOLocationID": 142,
+        "dropoff_count": 2691
+      },
+      {
+        "DOLocationID": 141,
+        "dropoff_count": 2648
+      },
+      {
+        "DOLocationID": 48,
+        "dropoff_count": 2514
+      },
+      {
+        "DOLocationID": 170,
+        "dropoff_count": 2461
+      },
+      {
+        "DOLocationID": 163,
+        "dropoff_count": 2414
+      }
+    ],
+    "top_peak_pickup_zones": [
+      {
+        "PULocationID": 132,
+        "peak_pickup_count": 2225
+      },
+      {
+        "PULocationID": 186,
+        "peak_pickup_count": 997
+      },
+      {
+        "PULocationID": 161,
+        "peak_pickup_count": 992
+      },
+      {
+        "PULocationID": 230,
+        "peak_pickup_count": 894
+      },
+      {
+        "PULocationID": 138,
+        "peak_pickup_count": 864
+      },
+      {
+        "PULocationID": 237,
+        "peak_pickup_count": 842
+      },
+      {
+        "PULocationID": 236,
+        "peak_pickup_count": 839
+      },
+      {
+        "PULocationID": 142,
+        "peak_pickup_count": 825
+      },
+      {
+        "PULocationID": 239,
+        "peak_pickup_count": 750
+      },
+      {
+        "PULocationID": 162,
+        "peak_pickup_count": 724
+      }
+    ]
+  },
+  "analysis_3_fare_factors": {
+    "charts": [
+      "outputs\\analysis\\03a_distance_vs_fare_scatter.png",
+      "outputs\\analysis\\03b_avg_fare_by_hour.png",
+      "outputs\\analysis\\03c_avg_fare_by_passenger_count.png"
+    ],
+    "fare_correlations": {
+      "fare_amount": 1.0,
+      "trip_distance": 0.9384543416775446,
+      "duration_min": 0.41145951834386796,
+      "speed_mph": 0.6818431881509975,
+      "passenger_count": 0.09410626156296513
+    },
+    "avg_fare_by_hour_preview": [
+      {
+        "pickup_hour": 0,
+        "avg_fare_amount": 19.594672563361115
+      },
+      {
+        "pickup_hour": 1,
+        "avg_fare_amount": 18.154514776776356
+      },
+      {
+        "pickup_hour": 2,
+        "avg_fare_amount": 18.16452757793765
+      },
+      {
+        "pickup_hour": 3,
+        "avg_fare_amount": 18.201173864894795
+      },
+      {
+        "pickup_hour": 4,
+        "avg_fare_amount": 19.31841055718475
+      },
+      {
+        "pickup_hour": 5,
+        "avg_fare_amount": 26.247734033245845
+      },
+      {
+        "pickup_hour": 6,
+        "avg_fare_amount": 28.24778385772914
+      },
+      {
+        "pickup_hour": 7,
+        "avg_fare_amount": 26.22707423580786
+      },
+      {
+        "pickup_hour": 8,
+        "avg_fare_amount": 22.133002257336344
+      },
+      {
+        "pickup_hour": 9,
+        "avg_fare_amount": 20.606476886915644
+      },
+      {
+        "pickup_hour": 10,
+        "avg_fare_amount": 19.66814331031909
+      },
+      {
+        "pickup_hour": 11,
+        "avg_fare_amount": 19.198659132559563
+      },
+      {
+        "pickup_hour": 12,
+        "avg_fare_amount": 19.448494807414225
+      },
+      {
+        "pickup_hour": 13,
+        "avg_fare_amount": 19.413576190476192
+      },
+      {
+        "pickup_hour": 14,
+        "avg_fare_amount": 20.178259800909427
+      },
+      {
+        "pickup_hour": 15,
+        "avg_fare_amount": 21.630151330241638
+      },
+      {
+        "pickup_hour": 16,
+        "avg_fare_amount": 21.964966529351184
+      },
+      {
+        "pickup_hour": 17,
+        "avg_fare_amount": 21.07687584163749
+      },
+      {
+        "pickup_hour": 18,
+        "avg_fare_amount": 20.90987080103359
+      },
+      {
+        "pickup_hour": 19,
+        "avg_fare_amount": 23.1828784040532
+      },
+      {
+        "pickup_hour": 20,
+        "avg_fare_amount": 22.385150549061283
+      },
+      {
+        "pickup_hour": 21,
+        "avg_fare_amount": 22.130883956386292
+      },
+      {
+        "pickup_hour": 22,
+        "avg_fare_amount": 21.523916015625
+      },
+      {
+        "pickup_hour": 23,
+        "avg_fare_amount": 27.286533425223986
+      }
+    ],
+    "avg_fare_by_passenger_count": [
+      {
+        "passenger_count": 1.0,
+        "avg_fare_amount": 19.339333814333813,
+        "trip_count": 66528
+      },
+      {
+        "passenger_count": 2.0,
+        "avg_fare_amount": 23.124085391377147,
+        "trip_count": 16723
+      },
+      {
+        "passenger_count": 3.0,
+        "avg_fare_amount": 23.69141248329834,
+        "trip_count": 5239
+      },
+      {
+        "passenger_count": 4.0,
+        "avg_fare_amount": 26.868513717865632,
+        "trip_count": 4629
+      },
+      {
+        "passenger_count": 5.0,
+        "avg_fare_amount": 17.048011363636363,
+        "trip_count": 352
+      },
+      {
+        "passenger_count": 6.0,
+        "avg_fare_amount": 17.369791666666668,
+        "trip_count": 192
+      }
+    ]
+  },
+  "analysis_4_self_selected_od_routes": {
+    "chart": "outputs\\analysis\\04_top_od_zone_pairs.png",
+    "top_od_pairs": [
+      {
+        "route_zone_pair": "237-236",
+        "trip_count": 474,
+        "median_fare_amount": 7.2,
+        "median_total_amount": 13.44,
+        "median_distance_miles": 0.97,
+        "median_duration_min": 5.116666666666666,
+        "median_speed_mph": 11.274294670846395
+      },
+      {
+        "route_zone_pair": "236-237",
+        "trip_count": 395,
+        "median_fare_amount": 7.9,
+        "median_total_amount": 14.04,
+        "median_distance_miles": 0.98,
+        "median_duration_min": 5.45,
+        "median_speed_mph": 10.216216216216216
+      },
+      {
+        "route_zone_pair": "237-237",
+        "trip_count": 354,
+        "median_fare_amount": 5.8,
+        "median_total_amount": 12.355,
+        "median_distance_miles": 0.6,
+        "median_duration_min": 4.083333333333333,
+        "median_speed_mph": 9.158567906307786
+      },
+      {
+        "route_zone_pair": "186-230",
+        "trip_count": 345,
+        "median_fare_amount": 12.8,
+        "median_total_amount": 20.05,
+        "median_distance_miles": 1.04,
+        "median_duration_min": 13.283333333333333,
+        "median_speed_mph": 4.8
+      },
+      {
+        "route_zone_pair": "132-265",
+        "trip_count": 339,
+        "median_fare_amount": 82.8,
+        "median_total_amount": 97.65,
+        "median_distance_miles": 18.12,
+        "median_duration_min": 29.55,
+        "median_speed_mph": 36.244213886671986
+      },
+      {
+        "route_zone_pair": "236-236",
+        "trip_count": 335,
+        "median_fare_amount": 5.8,
+        "median_total_amount": 11.8,
+        "median_distance_miles": 0.57,
+        "median_duration_min": 3.6333333333333333,
+        "median_speed_mph": 9.310344827586206
+      },
+      {
+        "route_zone_pair": "239-238",
+        "trip_count": 293,
+        "median_fare_amount": 6.5,
+        "median_total_amount": 13.15,
+        "median_distance_miles": 0.8,
+        "median_duration_min": 4.3,
+        "median_speed_mph": 10.773722627737227
+      },
+      {
+        "route_zone_pair": "142-239",
+        "trip_count": 293,
+        "median_fare_amount": 7.2,
+        "median_total_amount": 14.0,
+        "median_distance_miles": 0.9,
+        "median_duration_min": 5.216666666666667,
+        "median_speed_mph": 10.258064516129032
+      },
+      {
+        "route_zone_pair": "239-142",
+        "trip_count": 280,
+        "median_fare_amount": 7.2,
+        "median_total_amount": 13.9,
+        "median_distance_miles": 0.87,
+        "median_duration_min": 5.316666666666666,
+        "median_speed_mph": 9.41581483830057
+      },
+      {
+        "route_zone_pair": "138-230",
+        "trip_count": 277,
+        "median_fare_amount": 47.1,
+        "median_total_amount": 76.98,
+        "median_distance_miles": 9.79,
+        "median_duration_min": 31.133333333333333,
+        "median_speed_mph": 18.850230414746544
+      },
+      {
+        "route_zone_pair": "132-93",
+        "trip_count": 269,
+        "median_fare_amount": 31.7,
+        "median_total_amount": 35.3,
+        "median_distance_miles": 8.17,
+        "median_duration_min": 13.033333333333333,
+        "median_speed_mph": 37.40389972144847
+      },
+      {
+        "route_zone_pair": "237-161",
+        "trip_count": 255,
+        "median_fare_amount": 9.3,
+        "median_total_amount": 16.02,
+        "median_distance_miles": 1.0,
+        "median_duration_min": 7.95,
+        "median_speed_mph": 7.745019920318725
+      },
+      {
+        "route_zone_pair": "238-239",
+        "trip_count": 253,
+        "median_fare_amount": 6.5,
+        "median_total_amount": 12.6,
+        "median_distance_miles": 0.74,
+        "median_duration_min": 4.266666666666667,
+        "median_speed_mph": 10.285714285714286
+      },
+      {
+        "route_zone_pair": "263-141",
+        "trip_count": 252,
+        "median_fare_amount": 6.5,
+        "median_total_amount": 12.89,
+        "median_distance_miles": 0.84,
+        "median_duration_min": 3.7083333333333335,
+        "median_speed_mph": 13.552330410706045
+      },
+      {
+        "route_zone_pair": "161-237",
+        "trip_count": 244,
+        "median_fare_amount": 8.6,
+        "median_total_amount": 16.02,
+        "median_distance_miles": 1.0,
+        "median_duration_min": 6.716666666666667,
+        "median_speed_mph": 8.721899362154499
+      }
+    ],
+    "interpretation_note": "OD pairs use TLC Taxi Zone IDs. They identify zone-to-zone demand corridors, not exact street-level routes."
+  },
+  "fact_boundaries": [
+    "Charts are computed from the cleaned dataset produced by Step 1, not directly from raw official records.",
+    "PULocationID and DOLocationID are TLC Taxi Zone IDs, not exact longitude/latitude.",
+    "If a sample is used for the scatter plot, it affects visualization density only; aggregate summaries use all cleaned rows."
+  ]
+}
